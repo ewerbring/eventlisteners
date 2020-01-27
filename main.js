@@ -5,9 +5,15 @@
 ///step3 - create a variable that is containing box4
 ///step4 - change the style.backgroundColor of that variable inside that function
 
+function firstFunction() {
+  var box4 = document.querySelector("#b4");
+  box4.style.backgroundColor = "gray";
+  console.log("testing");
+}
+
 ///----
 
-///assignment2 -  change color of box4 to a new color when hovering over it
+///assignment2 -  change color of box4 to a new color only when hovering over it
 
 ///step1 - give the box2 element in the html document a function when hovering the box (look at next step)
 ///step1.1 - (!! here you need to give the box a first function when the mouse is entering the box - onmouseenter)
@@ -15,6 +21,20 @@
 ///step2 - declare the two functions in your javascript file (here)
 ///step3 - create a variable that is containing box2 in both of the functions
 ///step4 - change the style.backgroundColor of that variable inside those functions
+
+function secondFunction1() {
+  var box2 = document.querySelector("#b2");
+  box2.style.width = "250px";
+  box2.style.backgroundColor = "red";
+  console.log("testing entering");
+}
+
+function secondFunction2() {
+  var box2 = document.querySelector("#b2");
+  box2.style.width = "200px";
+  box2.style.backgroundColor = "blue";
+  console.log("testing leaving");
+}
 
 ///----
 
