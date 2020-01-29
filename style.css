@@ -43,4 +43,5 @@ h1 {
   position: absolute;
   margin: auto;
   left: 40vw;
+  pointer-events: none;
 }

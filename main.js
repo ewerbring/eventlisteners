@@ -47,6 +47,17 @@ function secondFunction2() {
 ///step3 - create a variable that is containing box3 in both of the functions
 ///step4 - change the style.backgroundColor of that variable inside those functions
 
+function thirdFunction1() {
+  var box4 = document.querySelector("#b4");
+  box4.style.backgroundColor = "blue";
+  console.log("clicked down");
+}
+
+function thirdFunction2() {
+  var box4 = document.querySelector("#b4");
+  box4.style.backgroundColor = "red";
+  console.log("not clicked down");
+}
 ///----
 
 ///assignment4 - add font size to header1 when moving the mouse around over box5
@@ -58,6 +69,18 @@ function secondFunction2() {
 ///step5 - create a variable that is containing header
 ///step6 - change the style.fontSize of that variable to the value of the counter (remember to add + "px"  in the end)
 
+var counter = 10;
+function forthFunction() {
+  var header = document.querySelector("#header");
+
+  if (counter < 200) {
+    counter = counter + 0.2;
+  }
+  console.log(counter);
+
+  header.style.fontSize = counter + "px";
+}
+
 ///----
 
 ///assignment5 - remove font size to header1 when moving the mouse around over box6
@@ -67,3 +90,13 @@ function secondFunction2() {
 ///step3 - remove 1 from  the counter every time the funciton is triggered
 ///step4 - create a variable that is containing header
 ///step6 - change the style.fontSize of that variable to the value of the counter
+
+function fifthFunction() {
+  var header = document.querySelector("#header");
+  if (counter > 20) {
+    counter -= 0.5;
+  }
+
+  console.log(counter);
+  header.style.fontSize = counter + "px";
+}
